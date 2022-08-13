@@ -1,0 +1,26 @@
+{
+  "lwc": {
+    "modules": [
+      { "dir": "$rootDir/src/modules" },
+      { "npm": "lightning-base-components" }
+    ]
+  },
+  "assets": [
+    {
+      "alias": "assetsDir",
+      "dir": "$rootDir/src/assets",
+      "urlPath": "/assets"
+    }
+  ],
+  "routes": [
+    {
+      "id": "app-container",
+      "path": "/soql",
+      "rootComponent": "app/container",
+      "layoutTemplate": "$layoutsDir/index.html",
+      "bootstrap": {
+        "syntheticShadow": true
+      }
+    }
+  ]
+}

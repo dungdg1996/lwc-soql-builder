@@ -1,0 +1,29 @@
+{
+  "name": "lwc-soql-builder",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf __lwr_cache__",
+    "dev": "lwr serve",
+    "start": "lwr serve --mode prod",
+    "start:compat": "lwr serve --mode compat",
+    "start:prod-compat": "lwr serve --mode prod-compat"
+  },
+  "dependencies": {
+    "lightning-base-components": "^1.15.4-alpha",
+    "lwc": "2.17.0",
+    "lwr": "0.7.3",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "soql-parser-js": "^4.6.1",
+    "textarea-caret": "^3.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsforce": "^1.11.0"
+  },
+  "engines": {
+    "node": ">=14.15.4 <19"
+  }
+}
